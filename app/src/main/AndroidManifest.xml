@@ -18,62 +18,74 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
 
     <application
-        android:name="com.darwinbark.yahochat.BaseApplication"
+        android:name=".BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.darwinbark.yahochat.activities.MainActivity"
+            android:name=".shubhcode.CalenderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".shubhcode.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".shubhcode.HomeActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".shubhcode.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".shubhcode.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.darwinbark.yahochat.activities.ChatActivity"
-            android:parentActivityName="com.darwinbark.yahochat.activities.MainActivity"
+            android:name=".activities.ChatActivity"
+            android:parentActivityName=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.darwinbark.yahochat.activities.MainActivity" />
         </activity>
-        <activity android:name="com.darwinbark.yahochat.activities.ImageViewerActivity" />
+        <activity android:name=".activities.ImageViewerActivity" />
 
         <service
-            android:name="com.darwinbark.yahochat.services.FirebaseChatService"
+            android:name=".services.FirebaseChatService"
             android:enabled="true" />
-        <service android:name="com.darwinbark.yahochat.services.MyFirebaseMessagingService">
+        <service android:name=".services.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.darwinbark.yahochat.services.MyFirebaseInstanceIDService">
+        <service android:name=".services.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
         <receiver
-            android:name="com.darwinbark.yahochat.receivers.ConnectivityReceiver"
+            android:name=".receivers.ConnectivityReceiver"
             android:enabled="true">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
-        </receiver>
-
-        <!-- https://developers.google.com/places/android-sdk/signup -->
+        </receiver> <!-- https://developers.google.com/places/android-sdk/signup -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/geo_api_key" />
-
-        <!-- https://developers.google.com/admob/android/quick-start#update_your_androidmanifestxml -->
-       <!-- <meta-data
+            android:value="@string/geo_api_key" /> <!-- https://developers.google.com/admob/android/quick-start#update_your_androidmanifestxml -->
+        <!--
+ <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/admob_app_id" />-->
-
+            android:value="@string/admob_app_id" />
+        -->
         <provider
-            android:name="com.darwinbark.yahochat.utils.MyFileProvider"
+            android:name=".utils.MyFileProvider"
             android:authorities="@string/authority"
             android:exported="false"
             android:grantUriPermissions="true"
@@ -84,26 +96,26 @@
         </provider>
 
         <activity
-            android:name="com.darwinbark.yahochat.activities.ContactViewerActivity"
+            android:name=".activities.ContactViewerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.darwinbark.yahochat.activities.ChatDetailActivity"
+            android:name=".activities.ChatDetailActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.darwinbark.yahochat.activities.SignInActivity"
+            android:name=".activities.SignInActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="com.darwinbark.yahochat.activities.CallScreenActivity"
+            android:name=".activities.CallScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.darwinbark.yahochat.activities.IncomingCallScreenActivity"
+            android:name=".activities.IncomingCallScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.darwinbark.yahochat.activities.SplashActivity"
+            android:name=".activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize">
@@ -116,10 +128,10 @@
         </activity>
 
         <service
-            android:name="com.darwinbark.yahochat.services.FetchMyUsersService"
+            android:name=".services.FetchMyUsersService"
             android:exported="false" />
         <service
-            android:name="com.darwinbark.yahochat.services.SinchService"
+            android:name=".services.SinchService"
             android:enabled="true"
             android:exported="false" />
     </application>

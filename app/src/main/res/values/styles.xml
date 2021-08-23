@@ -34,4 +34,9 @@
         <item name="android:windowMinWidthMinor">90%</item>
     </style>
 
+
+    <style name="viewParent.headerText.NoMode">
+        <item name="android:textColor">@color/darkTextColor</item>
+    </style>
+
 </resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeNav"
+            android:icon="@drawable/ic_home_1"
+            android:title="Home" />
+        <item
+            android:id="@+id/withdrawNav"
+            android:icon="@drawable/ic_wallet"
+            android:title="Wallet" />
+
+        <item
+            android:id="@+id/myCalenderNav"
+            android:icon="@drawable/ic_profile_circle"
+            android:title="My Calender" />
+
+        <item
+            android:id="@+id/chatNav"
+            android:icon="@drawable/ic_messages"
+            android:title="Chat" />
+
+
+        <item
+            android:id="@+id/referNav"
+            android:icon="@drawable/ic_refer"
+            android:title="Refer The app" />
+        <item
+            android:id="@+id/aboutNav"
+            android:icon="@drawable/ic_about"
+            android:title="About Us" />
+
+
+        <item
+            android:id="@+id/contact_admin"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact Us" />
+    </group>
+    <item android:title="Applications">
+        <menu>
+
+            <item
+                android:id="@+id/rateNav"
+                android:icon="@drawable/ic_star"
+                android:title="Rate The App" />
+
+
+            <item
+                android:id="@+id/nav_policy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Policy privacy" />
+
+            <item
+                android:id="@+id/signOutNav"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

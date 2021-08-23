@@ -4,6 +4,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/780b0eab439318578685933a9f23c9eb/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/780b0eab439318578685933a9f23c9eb/jetified-firebase-measurement-connector-impl-17.0.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/780b0eab439318578685933a9f23c9eb/jetified-firebase-measurement-connector-impl-17.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c57b4614394592384fe9ce5faaf816c/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c57b4614394592384fe9ce5faaf816c/jetified-firebase-measurement-connector-impl-17.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c57b4614394592384fe9ce5faaf816c/jetified-firebase-measurement-connector-impl-17.0.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
