@@ -1,17 +1,16 @@
-package com.darwinbark.yahochat.shubhcode;
+package com.darwinbark.yahochat.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.content.res.Configuration;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,51 +18,45 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.darwinbark.yahochat.R;
-import com.darwinbark.yahochat.activities.ChatActivity;
-import com.darwinbark.yahochat.databinding.ActivityHome2Binding;
+import com.darwinbark.yahochat.databinding.ActivityHomeBinding;
 import com.darwinbark.yahochat.fragments.HomeMainFragment;
 import com.google.android.material.navigation.NavigationView;
 
-public class HomeActivity2 extends AppCompatActivity implements View.OnClickListener {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ActivityHome2Binding mBinding;
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     NavigationView navigationView;
-
+    private ActivityHomeBinding mBinding;
     private Menu mToolbarMenu;
-
 
     public void setToolbarMenu(Menu toolbarMenu) {
         mToolbarMenu = toolbarMenu;
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home2);
+        setContentView(R.layout.activity_home);
 
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull  MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.nav_home:
-                        Toast.makeText(HomeActivity2.this, "I am Home", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(HomeActivity.this, "I am Home", Toast.LENGTH_SHORT).show();
                         break;
 
                     case R.id.myCalenderNav:
-                        // to calenderactivity
-                        startActivity(new Intent(HomeActivity2.this, HomeActivity2.class));
+                        startActivity(new Intent(HomeActivity.this, MainActivity.class));
                         break;
 
                     case R.id.chatNav:
-                        Toast.makeText(HomeActivity2.this, "I am Chat", Toast.LENGTH_SHORT).show();
-                        // to chatactivity
-                        startActivity(new Intent(HomeActivity2.this, ChatActivity.class));
+                        Toast.makeText(HomeActivity.this, "I am Chat", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(HomeActivity.this, MainActivity.class));
                         return true;
 
                 }
@@ -81,7 +74,6 @@ public class HomeActivity2 extends AppCompatActivity implements View.OnClickList
         drawerLayout.setDrawerListener(drawerToggle);
         drawerToggle.syncState();
 
-
     }
 
     @Override
@@ -95,11 +87,29 @@ public class HomeActivity2 extends AppCompatActivity implements View.OnClickList
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
-                startActivity(new Intent(this, SettingActivity.class));
+                startActivity(new Intent(this, HomeActivity.class));
                 return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setListeners() {
+        mBinding.textViewGenerate.setOnClickListener(this);
+        mBinding.textViewScan.setOnClickListener(this);
+        mBinding.textViewHistory.setOnClickListener(this);
+
+        mBinding.imageViewGenerate.setOnClickListener(this);
+        mBinding.imageViewScan.setOnClickListener(this);
+        mBinding.imageViewHistory.setOnClickListener(this);
+
+        mBinding.constraintLayoutGenerateContainer.setOnClickListener(this);
+        mBinding.constraintLayoutScanContainer.setOnClickListener(this);
+        mBinding.constraintLayoutHistoryContainer.setOnClickListener(this);
+    }
+
+    private void initializeBottomBar() {
+        clickOnHome();
     }
 
     private void clickOnHome() {
@@ -175,7 +185,6 @@ public class HomeActivity2 extends AppCompatActivity implements View.OnClickList
 
     }
 
-
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -215,28 +224,5 @@ public class HomeActivity2 extends AppCompatActivity implements View.OnClickList
         transaction.commit();
     }
 
-    @Override
-    public void onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawers();
-            return;
-        }
-
-        if (mBinding.imageViewGenerateActive.getVisibility() != View.VISIBLE) {
-
-            clickOnHome();
-        } else {
-            finish();
-            finishAffinity();
-
-        }
-
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        drawerToggle.onConfigurationChanged(newConfig);
-    }
 
 }

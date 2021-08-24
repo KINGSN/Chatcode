@@ -33,7 +33,7 @@ android {
         resValue 'color', "colorPrimaryDark", "#1976D2"
         resValue 'color', "colorAccent", "#1A237E"
 
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 27
         versionCode 34
         versionName "5.2.3"

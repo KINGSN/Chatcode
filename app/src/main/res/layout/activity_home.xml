@@ -11,6 +11,7 @@
         android:fitsSystemWindows="true">
 
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -21,8 +22,8 @@
                 android:id="@+id/adView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@color/white"
                 android:visibility="gone"
+                android:background="@color/white"
                 ads:layout_constraintBottom_toBottomOf="parent"
                 ads:layout_constraintEnd_toEndOf="parent"
                 ads:layout_constraintStart_toStartOf="parent"
@@ -204,7 +205,7 @@
                 android:id="@+id/toolbar_home"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/toolbar_height"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimaryDark1"
                 android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
                 app:contentInsetStartWithNavigation="@dimen/margin_0"
                 app:layout_constraintBottom_toTopOf="@+id/coordinator_layout_fragment_container"
@@ -231,7 +232,7 @@
             android:layout_gravity="start"
             android:background="@color/black"
             app:headerLayout="@layout/header"
-            app:itemIconTint="@color/colorPrimary"
+            app:itemIconTint="@color/colorPrimary1"
             app:itemTextColor="@color/white"
             app:menu="@menu/nav_menu" />
 

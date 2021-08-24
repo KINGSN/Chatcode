@@ -39,16 +39,21 @@
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/drawable/running_round.xml" value="0.22552083333333334" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/drawable/text_box.xml" value="0.22552083333333334" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_calender.xml" value="0.209375" />
+        <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_home.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_home2.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_register.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_setting.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_sign_in_1.xml" value="0.12771739130434784" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_sign_in_2.xml" value="0.12771739130434784" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/activity_splash.xml" value="0.209375" />
+        <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/content_main.xml" value="0.209375" />
+        <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/dialog_v_card_detail.xml" value="0.1" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/empty_view.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/footer_view.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/fragment_confirmation.xml" value="0.209375" />
+        <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/fragment_group_new.xml" value="0.1" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/fragment_home_main.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/header.xml" value="0.209375" />
         <entry key="..\:/Darwinbark Technology/Chatcode/app/src/main/res/layout/layout_calender.xml" value="0.209375" />
