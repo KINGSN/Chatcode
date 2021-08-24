@@ -67,7 +67,6 @@
     <color name="gnt_outline">#E0E0E0</color>
 
 
-
     <!--colors for light mode-->
     <color name="contentBodyColor">#FCFCFC</color>
     <color name="imageBorderColor">#E01E7A</color>
@@ -107,7 +106,7 @@
     <color name="colorScoreProgress">#00F5D8</color>
     <color name="colorReferralProgress">#8262dd</color>
     <color name="colorReferralProgressEnd">#61bafe</color>
-    <color name="colorReferralIcon">#6cb4fc</color>
+    <color name="colorReferralIc̥on">#6cb4fc</color>
     <color name="colorBalanceProgress">#5866e3</color>
     <color name="colorBalanceProgressEnd">#ed4ad9</color>
     <color name="colorBalanceIcon">#5c4fe0</color>
