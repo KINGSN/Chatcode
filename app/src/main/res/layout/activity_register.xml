@@ -84,7 +84,7 @@
                         app:ccp_showFlag="true"
                         app:ccp_showFullName="true"
                         app:ccp_showNameCode="true"
-                        app:hintTextColor="@color/white" />
+                        />
 
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -95,7 +95,7 @@
                         android:hint="Mobile number"
                         android:textColorHint="@color/textinput_hint_text_color"
                         app:boxStrokeColor="@color/textinput_stroke_color"
-                        app:hintTextColor="@color/white">
+                       >
 
 
                         <com.google.android.material.textfield.TextInputEditText
